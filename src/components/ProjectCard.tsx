@@ -6,14 +6,18 @@ import { ProjectProps } from "../types/types";
 
 export default function ProjectCard(project: ProjectProps) {
   return (
-    <Card variant="outlined" elevation={0} sx={{ display: "flex" }}>
-      <CardMedia component="img" image="/1280x800.png" sx={{ width: 300 }} />
+    <Card variant="outlined" elevation={0}>
+      <CardMedia component="img" image="/1280x800.png" sx={{ height: 100 }} />
       <CardContent>
-        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+        {/* <Typography component="span" variant="h6" fontWeight="bold">
           {project.name}
+        </Typography>{" "}
+        <Typography component="span" variant="subtitle2">
+          {project.date}
+        </Typography> */}
+        <Typography variant="body1" lineHeight={2}>
+          {project.description}
         </Typography>
-        <Typography variant="subtitle2">{project.date}</Typography>
-        <Typography variant="body2">{project.description}</Typography>
       </CardContent>
     </Card>
   );

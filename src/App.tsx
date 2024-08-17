@@ -1,6 +1,6 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import "@fontsource/noto-sans-jp/700.css";
+import "@fontsource/noto-sans-jp/500.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <ProjectGrid />
       </Container>
       <Footer />
