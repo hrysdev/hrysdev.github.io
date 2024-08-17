@@ -22,11 +22,11 @@ const projects = [
   },
 ];
 
-export default function ProjectList() {
+export default function ProjectGrid() {
   return (
     <Grid container spacing={3}>
       {projects.map((project, i) => (
-        <Grid item xs={4} key={i}>
+        <Grid item xs={12} key={i}>
           <ProjectCard
             name={project.name}
             date={project.date}
