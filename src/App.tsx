@@ -17,9 +17,9 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container maxWidth="lg">
+      {/* <Container maxWidth="lg">
         <ProjectGrid />
-      </Container>
+      </Container> */}
       <Footer />
     </ThemeProvider>
   );
