@@ -5,17 +5,17 @@ const projects = [
   {
     name: "寿司打ログ",
     date: "2024-08-18",
-    description: "寿司打のスコアを半自動で記録する Chrome 拡張機能",
+    content: "寿司打のスコアを半自動で記録する Chrome 拡張機能",
   },
   {
-    name: "寿司打ログ",
-    date: "2024-08-18",
-    description: "寿司打のスコアを半自動で記録する Chrome 拡張機能",
+    name: "ポートフォリオサイト",
+    date: "2024-08-20",
+    content: "あああ",
   },
   {
-    name: "寿司打ログ",
-    date: "2024-08-18",
-    description: "寿司打のスコアを半自動で記録する Chrome 拡張機能",
+    name: "カードタイトル",
+    date: "yyyy-mm-dd",
+    content: "カードの説明文",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function ProjectGrid() {
           <ProjectCard
             name={project.name}
             date={project.date}
-            description={project.description}
+            content={project.content}
           />
         </Grid>
       ))}
