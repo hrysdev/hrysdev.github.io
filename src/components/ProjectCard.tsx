@@ -14,7 +14,6 @@ export default function ProjectCard(project: ProjectProps) {
     <Card variant="outlined" elevation={0} sx={{ borderRadius: 5 }}>
       <CardMedia component="img" image="/1280x800.png" sx={{ height: 100 }} />
       <CardContent>
-        {/* <Typography variant="subtitle2">{project.name}</Typography> */}
         <Typography variant="body1" letterSpacing={0.16} lineHeight={2}>
           {project.content}
         </Typography>
@@ -22,4 +21,3 @@ export default function ProjectCard(project: ProjectProps) {
     </Card>
   );
 }
-1;

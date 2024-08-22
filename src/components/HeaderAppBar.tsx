@@ -9,7 +9,7 @@ export default function HeaderAppBar() {
       color="transparent"
       position="fixed"
       elevation={0}
-      sx={{ backdropFilter: "blur(3px)" }}
+      sx={{ backdropFilter: "blur(5px)" }}
     >
       <Container disableGutters>
         <Toolbar>
