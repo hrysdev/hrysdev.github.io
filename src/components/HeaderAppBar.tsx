@@ -11,11 +11,9 @@ export default function HeaderAppBar() {
       elevation={0}
       sx={{ backdropFilter: "blur(5px)" }}
     >
-      <Container disableGutters>
+      <Container maxWidth="md" disableGutters>
         <Toolbar>
-          <Typography variant="h6" fontWeight="bold">
-            ポートフォリオ
-          </Typography>
+          <Typography variant="h6">ポートフォリオ</Typography>
         </Toolbar>
       </Container>
     </AppBar>
