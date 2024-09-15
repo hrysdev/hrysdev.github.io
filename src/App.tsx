@@ -6,11 +6,14 @@ import "@fontsource/noto-sans-jp/900.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Footer from "./components/Footer";
-import HeaderAppBar from "./components/HeaderAppBar";
-import Home from "./pages/Home";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 export default function App() {
   const theme = createTheme({
+    palette: {
+      mode: "dark",
+    },
     typography: {
       fontFamily: "Noto Sans JP",
       fontWeightBold: 900,
@@ -20,8 +23,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <HeaderAppBar />
-      <Home />
+      <Header />
+      <Main />
       <Footer />
     </ThemeProvider>
   );
