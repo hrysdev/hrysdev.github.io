@@ -27,12 +27,42 @@ const works = [
     date: "xxxx/xx/xx",
     imgPath: "./320x320.png",
   },
+  {
+    title: "プロジェクトタイトル",
+    date: "xxxx/xx/xx",
+    imgPath: "./320x320.png",
+  },
+  {
+    title: "プロジェクトタイトル",
+    date: "xxxx/xx/xx",
+    imgPath: "./320x320.png",
+  },
+  {
+    title: "プロジェクトタイトル",
+    date: "xxxx/xx/xx",
+    imgPath: "./320x320.png",
+  },
+  {
+    title: "プロジェクトタイトル",
+    date: "xxxx/xx/xx",
+    imgPath: "./320x320.png",
+  },
+  {
+    title: "プロジェクトタイトル",
+    date: "xxxx/xx/xx",
+    imgPath: "./320x320.png",
+  },
+  {
+    title: "プロジェクトタイトル",
+    date: "xxxx/xx/xx",
+    imgPath: "./320x320.png",
+  },
 ];
 
 export default function Main() {
   return (
     <Container maxWidth="lg">
-      <Box sx={{ my: 8, userSelect: "none" }}>
+      <Box sx={{ my: 9, userSelect: "none" }}>
         <Stack direction="column" spacing={2} textAlign="center">
           <Typography variant="h4" fontWeight="bold" letterSpacing={2}>
             HrysDev's Works
@@ -46,10 +76,14 @@ export default function Main() {
           spacing={1}
           sx={{ display: "flex", justifyContent: "center", mt: 4 }}
         >
-          <IconButton size="large">
+          <IconButton size="large" target="_blank" href="https://x.com/hrysdev">
             <XIcon />
           </IconButton>
-          <IconButton size="large">
+          <IconButton
+            size="large"
+            target="_blank"
+            href="https://github.com/hrysdev"
+          >
             <GitHubIcon />
           </IconButton>
         </Stack>
