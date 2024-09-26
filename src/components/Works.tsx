@@ -7,25 +7,20 @@ import CardActionArea from "@mui/material/CardActionArea";
 
 const works = [
   {
+    title: "プロジェクトタイトル",
+    date: "2024/09/23",
+    imgPath: "./320x320.png",
+  },
+  {
     title: "寿司打トラッカー",
     date: "2024/08/10",
-    imgPath: "./640x640.png",
-  },
-  {
-    title: "ポートフォリオサイト",
-    date: "2024/09/23",
-    imgPath: "./320x320.png",
-  },
-  {
-    title: "ポートフォリオサイト",
-    date: "2024/09/23",
-    imgPath: "./320x320.png",
+    imgPath: "./sushi_da_tracker.png",
   },
 ];
 
 export default function Works() {
   return (
-    <Grid container spacing={{ xs: 3, md: 4 }}>
+    <Grid container justifyContent="center" spacing={{ xs: 3, md: 4 }}>
       {works.map((work, i) => {
         return (
           <Grid item xs={6} md={4} key={i}>
@@ -39,11 +34,14 @@ export default function Works() {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    pl: 4,
-                    pb: 4,
+                    pl: 3,
+                    pb: 3,
                     bgcolor: "rgba(0, 0, 0, 0.6)",
                     opacity: 0,
                     transition: "opacity 0.3s",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
                     "&:hover": {
                       opacity: 1,
                     },
