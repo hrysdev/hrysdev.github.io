@@ -3,7 +3,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-export default function HeaderAppBar() {
+export default function Header() {
   return (
     <AppBar
       color="transparent"
@@ -11,11 +11,9 @@ export default function HeaderAppBar() {
       elevation={0}
       sx={{ backdropFilter: "blur(5px)" }}
     >
-      <Container disableGutters>
+      <Container maxWidth="sm" disableGutters>
         <Toolbar>
-          <Typography variant="h6" fontWeight="bold">
-            ポートフォリオ
-          </Typography>
+          <Typography variant="h6">ポートフォリオ</Typography>
         </Toolbar>
       </Container>
     </AppBar>
