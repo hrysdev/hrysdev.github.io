@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 
 const posts = [
   {
-    title: "寿司打ロガー（仮）",
+    title: "寿司打ロガー（工事中）",
     date: "2024年08月10日",
     description: `
       タイピングゲーム『寿司打』のスコアを半自動で記録するChrome拡張機能です。
