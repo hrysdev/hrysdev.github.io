@@ -11,7 +11,7 @@ export default function Header() {
       elevation={0}
       sx={{ backdropFilter: "blur(5px)" }}
     >
-      <Container maxWidth="lg" disableGutters>
+      <Container maxWidth="sm" disableGutters>
         <Toolbar>
           <Typography variant="h6">ポートフォリオ</Typography>
         </Toolbar>

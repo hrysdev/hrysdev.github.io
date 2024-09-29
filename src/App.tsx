@@ -19,11 +19,26 @@ import Links from "./components/Links";
 export default function App() {
   const theme = createTheme({
     palette: {
-      mode: "dark",
+      mode: "light",
+      background: {
+        default: "#f5f5f5",
+        paper: "#f5f5f5",
+      },
     },
     typography: {
       fontFamily: "Noto Sans JP",
       fontWeightBold: 900,
+    },
+    components: {
+      MuiContainer: {
+        styleOverrides: {
+          root: {
+            "&.MuiContainer-maxWidthSm": {
+              maxWidth: "768px",
+            },
+          },
+        },
+      },
     },
   });
 
@@ -31,14 +46,14 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />
-      <Container maxWidth="lg">
+      <Container maxWidth="sm">
         <Box sx={{ my: 9, userSelect: "none" }}>
           <Stack spacing={2} textAlign="center" sx={{ mb: 3 }}>
             <Typography variant="h4" fontWeight="bold" letterSpacing={2}>
               HrysDev's Works
             </Typography>
             <Typography letterSpacing={1}>
-              ここは、趣味で行っている個人開発をまとめたポートフォリオサイトです。
+              趣味で行っている個人開発をまとめた、ブログ風のポートフォリオサイトです。
             </Typography>
           </Stack>
           <Links />
