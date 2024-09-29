@@ -14,7 +14,8 @@ const posts = [
     description: `テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト`,
     tags: ["タグ１", "タグ２"],
     imgPath: "./320x320.png",
-    link: "#",
+    href: "#",
+    target: "_blank",
   },
   {
     title: "タイトル",
@@ -22,7 +23,8 @@ const posts = [
     description: `テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト`,
     tags: ["タグ１", "タグ２"],
     imgPath: "./320x320.png",
-    link: "#",
+    href: "#",
+    target: "_blank",
   },
   {
     title: "寿司打ロガー（仮）",
@@ -32,8 +34,9 @@ const posts = [
       寿司打にはスコアを記録する機能がありませんが、この拡張機能を使えば、日々の積み重ねを簡単に記録できます。
       `,
     tags: ["Chrome拡張機能"],
-    imgPath: "./sushi_da_tracker.png",
-    link: "#",
+    imgPath: "./320x320.png",
+    href: "https://github.com/hrysdev/sushi-da-logger",
+    target: "_blank",
   },
 ];
 
@@ -48,7 +51,8 @@ export default function Posts() {
           <Card key={i} elevation={0} sx={{ display: "flex" }}>
             <CardContent sx={{ px: 0, py: 0, mr: 5 }}>
               <Link
-                href={post.link}
+                href={post.href}
+                target={post.target}
                 color="text.primary"
                 variant="h5"
                 underline="none"
@@ -76,7 +80,8 @@ export default function Posts() {
                 {post.description}
               </Typography>
               <Link
-                href={post.link}
+                href={post.href}
+                target={post.target}
                 color="#3cb371"
                 underline="none"
                 lineHeight={2}
@@ -87,7 +92,7 @@ export default function Posts() {
             <CardMedia
               component="img"
               image={post.imgPath}
-              sx={{ height: 180, borderRadius: 1 }}
+              sx={{ width: 180, height: 180, borderRadius: 1 }}
             />
           </Card>
         </Box>
