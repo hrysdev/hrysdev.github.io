@@ -5,14 +5,16 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const works = [
+const posts = [
   {
     title: "タイトル",
     date: "2024年09月23日",
     description: `テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト`,
     tags: ["タグ１", "タグ２"],
     imgPath: "./320x320.png",
+    link: "#",
   },
   {
     title: "タイトル",
@@ -20,6 +22,7 @@ const works = [
     description: `テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト`,
     tags: ["タグ１", "タグ２"],
     imgPath: "./320x320.png",
+    link: "#",
   },
   {
     title: "寿司打ロガー（仮）",
@@ -30,37 +33,38 @@ const works = [
       `,
     tags: ["Chrome拡張機能"],
     imgPath: "./sushi_da_tracker.png",
+    link: "#",
   },
 ];
 
-export default function Works() {
+export default function Posts() {
   return (
     <Stack spacing={11}>
-      {works.map((work, i) => (
+      {posts.map((post, i) => (
         <Box>
           <Typography color="text.disabled" lineHeight={2.5}>
-            {work.date}
+            {post.date}
           </Typography>
           <Card key={i} elevation={0} sx={{ display: "flex" }}>
             <CardContent sx={{ px: 0, py: 0, mr: 5 }}>
               <Link
-                href="#"
+                href={post.link}
                 color="text.primary"
                 variant="h5"
                 underline="none"
                 letterSpacing={1}
               >
-                {work.title}
+                {post.title}
               </Link>
               <Box>
                 <Link
                   href="#"
-                  color="#009944"
+                  color="#3cb371"
                   variant="subtitle2"
                   underline="none"
                   lineHeight={2}
                 >
-                  {work.tags.join(" ")}
+                  {post.tags.join(" ")}
                 </Link>
               </Box>
               <Typography
@@ -69,12 +73,20 @@ export default function Works() {
                 letterSpacing={0.5}
                 sx={{ mt: 2 }}
               >
-                {work.description}
+                {post.description}
               </Typography>
+              <Link
+                href={post.link}
+                color="#3cb371"
+                underline="none"
+                lineHeight={2}
+              >
+                Read more →
+              </Link>
             </CardContent>
             <CardMedia
               component="img"
-              image={work.imgPath}
+              image={post.imgPath}
               sx={{ height: 180, borderRadius: 1 }}
             />
           </Card>

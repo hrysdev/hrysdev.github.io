@@ -12,9 +12,9 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Works from "./components/Works";
 import Links from "./components/Links";
+import Posts from "./components/Posts";
+import Footer from "./components/Footer";
 
 export default function App() {
   const theme = createTheme({
@@ -47,18 +47,18 @@ export default function App() {
       <CssBaseline />
       <Header />
       <Container maxWidth="sm">
-        <Box sx={{ my: 9, userSelect: "none" }}>
+        <Box sx={{ my: 9 }}>
           <Stack spacing={2} textAlign="center" sx={{ mb: 3 }}>
             <Typography variant="h4" fontWeight="bold" letterSpacing={2}>
               HrysDev's Works
             </Typography>
-            <Typography letterSpacing={1}>
+            <Typography color="text.secondary" letterSpacing={1}>
               趣味で行っている個人開発をまとめた、ブログ風のポートフォリオサイトです。
             </Typography>
           </Stack>
           <Links />
         </Box>
-        <Works />
+        <Posts />
       </Container>
       <Footer />
     </ThemeProvider>
