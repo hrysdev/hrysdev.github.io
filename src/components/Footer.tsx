@@ -5,12 +5,9 @@ export default function Footer() {
     <Typography
       variant="h6"
       sx={{
-        position: "fixed",
-        bottom: 0,
-        width: "100%",
         color: "text.secondary",
         textAlign: "center",
-        mt: 15,
+        mt: 18,
         py: 2,
       }}
     >
