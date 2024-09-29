@@ -5,7 +5,6 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const posts = [
   {
