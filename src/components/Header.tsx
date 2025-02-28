@@ -16,7 +16,7 @@ export default function Header() {
       <Container maxWidth="md" disableGutters>
         <Toolbar>
           <IconButton href="/" sx={{ mr: 1 }}>
-            <Avatar alt="HrysDev" src="avatar.svg" />
+            <Avatar alt="HrysDev" src="/avatar.svg" />
           </IconButton>
           <Typography variant="h6" fontStyle="oblique">HrysDev's Portfolio</Typography>
         </Toolbar>
