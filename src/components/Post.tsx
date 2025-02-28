@@ -77,7 +77,6 @@ export default function Post() {
                     width: 100,
                     height: 100,
                     borderRadius: 4,
-                    userSelect: "none",
                   }}
                 >
                   <Typography
@@ -86,6 +85,7 @@ export default function Post() {
                     lineHeight={1.9}
                     width={100}
                     height={100}
+                    sx={{ userSelect: "none" }}
                   >
                     {post.icon}
                   </Typography>
@@ -95,7 +95,6 @@ export default function Post() {
                     href={post.href}
                     target="_blank"
                     color="text.primary"
-                    // variant="h6"
                     underline="none"
                   >
                     {post.title}
@@ -133,6 +132,7 @@ export default function Post() {
                     lineHeight={1.9}
                     width={100}
                     height={100}
+                    sx={{ userSelect: "none" }}
                   >
                     {post.icon}
                   </Typography>
@@ -142,7 +142,6 @@ export default function Post() {
                     href={post.href}
                     target="_blank"
                     color="text.primary"
-                    // variant="h6"
                     underline="none"
                   >
                     {post.title}
