@@ -18,7 +18,7 @@ export default function Header() {
           <IconButton href="/" sx={{ mr: 1 }}>
             <Avatar alt="HrysDev" src="avatar.svg" />
           </IconButton>
-          <Typography variant="h6" fontStyle="oblique">HrysDev</Typography>
+          <Typography variant="h6" fontStyle="oblique">HrysDev's Portfolio</Typography>
         </Toolbar>
       </Container>
     </AppBar>
