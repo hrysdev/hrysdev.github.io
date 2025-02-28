@@ -77,6 +77,7 @@ export default function Post() {
                     width: 100,
                     height: 100,
                     borderRadius: 4,
+                    userSelect: "none",
                   }}
                 >
                   <Typography
@@ -123,6 +124,7 @@ export default function Post() {
                     width: 100,
                     height: 100,
                     borderRadius: 4,
+                    userSelect: "none",
                   }}
                 >
                   <Typography
