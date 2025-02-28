@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 export default function Footer() {
   return (
     <Typography
-      variant="h6"
       sx={{
         color: "text.secondary",
         textAlign: "center",
@@ -11,7 +10,7 @@ export default function Footer() {
         py: 2,
       }}
     >
-      &copy; 2024 HrysDev.
+      Copyright &copy; 2024 - 2025 HrysDev All Rights Reserved.
     </Typography>
   );
 }
