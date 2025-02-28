@@ -6,13 +6,9 @@ import "@fontsource/noto-sans-jp/900.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
 
 import Header from "./components/Header";
-import Links from "./components/Links";
 import Post from "./components/Post";
 import Footer from "./components/Footer";
 
