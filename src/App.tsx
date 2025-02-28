@@ -13,7 +13,7 @@ import Box from "@mui/material/Box";
 
 import Header from "./components/Header";
 import Links from "./components/Links";
-import Posts from "./components/Posts";
+import Post from "./components/Post";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -46,19 +46,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />
-      <Container maxWidth="sm">
-        <Box sx={{ my: 9 }}>
-          <Stack spacing={2} textAlign="center" sx={{ mb: 3 }}>
-            <Typography variant="h4" fontWeight="bold" letterSpacing={2}>
-              HrysDev's Works
-            </Typography>
-            <Typography color="text.secondary" letterSpacing={1}>
-              趣味で行っている個人開発をまとめた、ブログ風のポートフォリオサイトです。
-            </Typography>
-          </Stack>
-          <Links />
-        </Box>
-        <Posts />
+      <Container maxWidth="md" sx={{ my: 9 }}>
+        <Post />
       </Container>
       <Footer />
     </ThemeProvider>
