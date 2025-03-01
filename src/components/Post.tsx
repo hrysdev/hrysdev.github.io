@@ -54,7 +54,7 @@ const otherPosts = [
     date: "2024年08月10日",
     description: `
       `,
-    icon: "🎮",
+    icon: "🍣",
     tags: ["Chrome拡張機能"],
     href: "https://github.com/hrysdev/sushi-da-logger",
   },
