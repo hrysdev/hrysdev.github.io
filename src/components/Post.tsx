@@ -20,7 +20,7 @@ const compPosts = [
   },
   {
     title:
-      "SIGNATE Student Cup 2023 - 中古車の価格予測チャレンジに参加してみた",
+      "SIGNATE Student Cup 2023【モデリング部門】：中古車の価格予測チャレンジに参加してみた",
     date: "2023/08/24",
     description: `
       `,
@@ -42,7 +42,7 @@ const compPosts = [
 const otherPosts = [
   {
     title: "Vite + ReactでZenn風ポートフォリオサイトを作ってみた",
-    date: "2024年08月19日",
+    date: "2025年03月01日",
     description: `
       `,
     icon: "💻",
@@ -72,11 +72,12 @@ export default function Post() {
             <Card key={i} elevation={0}>
               <Stack direction="row" spacing={3}>
                 <Paper
-                  variant="outlined"
+                  elevation={0}
                   sx={{
                     width: 100,
                     height: 100,
                     borderRadius: 4,
+                    backgroundColor: "#ffffff",
                   }}
                 >
                   <Typography
@@ -85,6 +86,7 @@ export default function Post() {
                     lineHeight={1.9}
                     width={100}
                     height={100}
+                    sx={{ userSelect: "none" }}
                   >
                     {post.icon}
                   </Typography>
@@ -94,7 +96,6 @@ export default function Post() {
                     href={post.href}
                     target="_blank"
                     color="text.primary"
-                    // variant="h6"
                     underline="none"
                   >
                     {post.title}
@@ -118,11 +119,13 @@ export default function Post() {
             <Card key={i} elevation={0}>
               <Stack direction="row" spacing={3}>
                 <Paper
-                  variant="outlined"
+                  elevation={0}
                   sx={{
                     width: 100,
                     height: 100,
                     borderRadius: 4,
+                    userSelect: "none",
+                    backgroundColor: "#ffffff",
                   }}
                 >
                   <Typography
@@ -131,6 +134,7 @@ export default function Post() {
                     lineHeight={1.9}
                     width={100}
                     height={100}
+                    sx={{ userSelect: "none" }}
                   >
                     {post.icon}
                   </Typography>
@@ -140,7 +144,6 @@ export default function Post() {
                     href={post.href}
                     target="_blank"
                     color="text.primary"
-                    // variant="h6"
                     underline="none"
                   >
                     {post.title}
