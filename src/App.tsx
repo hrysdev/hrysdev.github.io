@@ -17,8 +17,8 @@ export default function App() {
     palette: {
       mode: "light",
       background: {
-        default: "#f5f5f5",
-        paper: "#f5f5f5",
+        default: "#e6fbff",
+        paper: "#e6fbff",
       },
     },
     typography: {
