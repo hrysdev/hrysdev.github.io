@@ -45,7 +45,7 @@ const otherPosts = [
     date: "2025年03月01日",
     description: `
       `,
-    icon: "💻",
+    icon: "🌐",
     tags: ["Chrome拡張機能"],
     href: "https://github.com/hrysdev/hrysdev.github.io",
   },
